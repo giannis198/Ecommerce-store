@@ -5,6 +5,9 @@ const Footer = () => {
         <p className="text-center text-xs text-black">
           &copy; 2023 Store, Inc. All rights reserved.
         </p>
+        <p className="text-center text-sm text-black">
+          Created by ioannis @2023
+        </p>
       </div>
     </footer>
   );
