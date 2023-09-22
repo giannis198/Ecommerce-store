@@ -3,8 +3,6 @@
 import PreviewModal from "@/components/ui/PreviewModal";
 import { useEffect, useState } from "react";
 
-
-
 const ModalProvider = () => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -16,11 +14,11 @@ const ModalProvider = () => {
     return null;
   }
 
-  return ( 
+  return (
     <>
       <PreviewModal />
     </>
-   );
-}
- 
+  );
+};
+
 export default ModalProvider;

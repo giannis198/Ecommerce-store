@@ -1,21 +1,24 @@
-import { Billboard as BillboardType } from "@/types"
+import { Billboard as BillboardType } from "@/types";
 
 interface Props {
-    data: BillboardType
+  data: BillboardType;
 }
 
-const Billboard = ({data}: Props) => {
+const Billboard = ({ data }: Props) => {
   return (
-    <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden">
-        <div style={{ backgroundImage: `url(${data?.imageUrl})` }} className="rounded-xl relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover">
-            <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
-                <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs">
-                    {data?.label}
-                </div>
-            </div>
+    <div className="overflow-hidden rounded-xl p-4 sm:p-6 lg:p-8">
+      <div
+        style={{ backgroundImage: `url(${data?.imageUrl})` }}
+        className="relative aspect-square overflow-hidden rounded-xl bg-cover md:aspect-[2.4/1]"
+      >
+        <div className="flex h-full w-full flex-col items-center justify-center gap-y-8 text-center">
+          <div className="max-w-xs text-3xl font-bold sm:max-w-xl sm:text-5xl lg:text-6xl">
+            {data?.label}
+          </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Billboard
+export default Billboard;

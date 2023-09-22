@@ -4,11 +4,9 @@ import MainNav from "./MainNav";
 import { getCategories } from "@/actions/get-categories";
 import NavbarActions from "./NavbarActions";
 
-
-
 const Navbar = async () => {
-    const categories = await getCategories()
-    
+  const categories = await getCategories();
+
   return (
     <div className="border-b">
       <Container>
