@@ -21,20 +21,19 @@ const ProductCard = ({ data }: Props) => {
     router.push(`/product/${data?.id}`);
   };
 
-  const cart = useCart()
-  const previewModal = usePreviewModal()
+  const cart = useCart();
+  const previewModal = usePreviewModal();
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.stopPropagation()
-    previewModal.onOpen(data)
-  }
+    event.stopPropagation();
+    previewModal.onOpen(data);
+  };
 
-   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
-     event.stopPropagation();
-     cart.additem(data);
-   };
+  const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
+    event.stopPropagation();
+    cart.additem(data);
+  };
 
-  
   return (
     <div
       onClick={handleClick}

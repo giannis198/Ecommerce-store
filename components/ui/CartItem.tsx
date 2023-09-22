@@ -1,23 +1,22 @@
-"use client"
+"use client";
 
-import { Product } from "@/types"
-import Image from "next/image"
-import { toast} from "react-hot-toast"
-import IconButton from "./IconButton"
-import { X } from "lucide-react"
-import Currency from "./Currency"
-import { useCart } from "@/hooks/use-cart"
+import { Product } from "@/types";
+import Image from "next/image";
+import IconButton from "./IconButton";
+import { X } from "lucide-react";
+import Currency from "./Currency";
+import { useCart } from "@/hooks/use-cart";
 
 interface Props {
-    data: Product
+  data: Product;
 }
 
-const CartItem = ({data} : Props) => {
-    const cart = useCart();
+const CartItem = ({ data }: Props) => {
+  const cart = useCart();
 
-    const onRemove = () => {
-      cart.removeItem(data.id);
-    };
+  const onRemove = () => {
+    cart.removeItem(data.id);
+  };
 
   return (
     <li className="flex border-b py-6">
@@ -49,6 +48,6 @@ const CartItem = ({data} : Props) => {
       </div>
     </li>
   );
-}
+};
 
-export default CartItem
+export default CartItem;

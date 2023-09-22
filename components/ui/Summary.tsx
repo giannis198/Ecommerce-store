@@ -4,7 +4,6 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-
 import { toast } from "react-hot-toast";
 import { useCart } from "@/hooks/use-cart";
 import Currency from "./Currency";
