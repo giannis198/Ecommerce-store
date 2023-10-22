@@ -8,7 +8,7 @@ const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
   console.log(products);
   
-  const billboard = await getBillboard("650df18df0d8c899fbe7a072");
+  const billboard = await getBillboard("65357d56422b1f41cc0668fb");
   return (
     <Container>
       <div className="space-y-10 pb-10">

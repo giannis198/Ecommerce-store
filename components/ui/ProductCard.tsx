@@ -1,6 +1,6 @@
 "use client";
 
-import { Color, Product, Size } from "@/types";
+import { Product } from "@/types";
 import Image from "next/image";
 import IconButton from "./IconButton";
 import { Expand, ShoppingCart } from "lucide-react";
@@ -12,13 +12,10 @@ import { useCart } from "@/hooks/use-cart";
 
 interface Props {
   data: Product;
-  colors: Color[]
-  sizes: Size[]
 }
 
-const ProductCard = ({ data,colors,sizes }: Props) => {
+const ProductCard = ({ data }: Props) => {
   const router = useRouter();
-
 
   const handleClick = () => {
     router.push(`/product/${data?.id}`);
@@ -65,10 +62,6 @@ const ProductCard = ({ data,colors,sizes }: Props) => {
       <div>
         <p className="text-lg font-semibold">{data.name}</p>
         <p className="text-sm text-gray-500">{data.category?.name}</p>
-        <div
-          className="h-6 w-6 rounded-full border border-gray-600"
-          style={{ backgroundColor: data?.color?.value }}
-        ></div>
       </div>
       <div className="flex items-center justify-between">
         <Currency value={data?.price} />
