@@ -37,6 +37,9 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 flex flex-wrap items-center justify-between border-t border-gray-100 px-6 py-10 sm:px-16">
+        <Link href="https://www.linkedin.com/in/ioannis-nikitopoulos-547a99122/">
+          <p className="mr-3">Created by ioannis @2023</p>
+        </Link>
         <p className="mr-3">Created by ioannis @2023</p>
         <p> All Rights Reserved.</p>
 

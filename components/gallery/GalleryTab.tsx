@@ -12,7 +12,7 @@ const GalleryTab = ({ image }: Props) => {
     <Tab className="relative flex aspect-square cursor-pointer items-center justify-center rounded-md bg-white">
       {({ selected }) => (
         <div>
-          <span className="absolute inset-0 aspect-square h-full w-full overflow-hidden rounded-md">
+          <span className="absolute inset-0 aspect-square h-full w-full overflow-hidden rounded-md object-contain">
             <Image
               fill
               src={image.url}
