@@ -40,7 +40,6 @@ const Footer = () => {
         <Link href="https://www.linkedin.com/in/ioannis-nikitopoulos-547a99122/">
           <p className="mr-3">Created by ioannis @2023</p>
         </Link>
-        <p className="mr-3">Created by ioannis @2023</p>
         <p> All Rights Reserved.</p>
 
         <div className="footer__copyrights-link">
